@@ -107,6 +107,5 @@ function ReadAndParseFile {
     return $TotalScore
 }
 
-
 [int] $TotalScore = ReadAndParseFile("..\game_moves.txt")
 Write-Output "Total score of all games are: $TotalScore"

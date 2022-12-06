@@ -110,7 +110,6 @@ function GetMyMoveInGame {
     Write-Error "Invalid GameRoundResult ('$GameResult') in method GetMyMoveInGame()!" 
 }
 
-
 function ReadAndParseFile {
     [OutputType([int])]
     param ([string] $fileName)
@@ -125,7 +124,6 @@ function ReadAndParseFile {
     }
     return $TotalScore
 }
-
 
 [int] $TotalScore = ReadAndParseFile "..\game_moves.txt"
 Write-Output "Total score of all games are: $TotalScore"
