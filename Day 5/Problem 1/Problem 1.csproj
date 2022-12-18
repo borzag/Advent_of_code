@@ -1,24 +1,20 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <RootNamespace>Problem_2</RootNamespace>
+    <RootNamespace>Problem_1</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="..\Data\exampledata.txt" Link="Data\exampledata.txt">
+    <None Update="Data\exampledata.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Data\inputdata.txt" Link="Data\inputdata.txt">
+    </None>
+    <None Update="Data\inputdata.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Data\" />
+    </None>
   </ItemGroup>
 
 </Project>
